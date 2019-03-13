@@ -1,0 +1,57 @@
+Assign1: Due 11:59PM February 15
+
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late.
+
+Using Test First Development (no code without test first) implement the problem you designed in hw2. Feel free to evolve that design and use your judgment to make changes based on the improved understanding and learning.
+
+Take small steps, ask for frequent reviews.
+
+First start with a tests list and a canary test. Implement at most two more tests and minimum code to make those tests to pass. This is a great first step to complete and ask for a review.
+
+After completing the assignment (and only after) answer the following questions:
+
+1. What did you learn mainly in this assignment?
+
+- Our first lesson was that we tent to add unnecessary code. Mainly because we are too eager to write fast instead of thinking what is minimalist and readable.  
+- We also learned that it is easy to make things complex and to lose focus when you see the problem as a whole and not as individual tasks. It is hard to unlearn what we have done so many times. It is hard not to think about the implementation and instead focus on the tests. 
+- However, once we thought about each test as individual tasks, it helped us be focus and make modular code. 
+- When making the tests cases, it made us think of how the code will be used. This helped us make sure that the code is readable and simple. 
+- TTD helped us write code in short focused modules and short classes.
+- Short incremental steps helped us understand the flow of activity within the code.
+- The immediate quick feedback from the test cases helped us in fixing the code quickly. 
+- Once, the application was completed, we felt confidante that our code works due to the feedback form the tests. 
+- The value of testing and modularity was evident to us when creating the user interface. It made the development easy because of the code’s modularity. 
+- We learned about continuous integration and the way it can be used to develop stable code.
+
+2. How is your current design different, if at all, from the strategic design created in hw2?
+
+The current design has significantly changed from what we had in the previous version in terms of logic. Instead of using individual full-pledged class with multiple methods we have made use Enum classes to keep track of each cell status using the Status Enum class and to track the game progress using the GameStatus Enum class. 
+The CellManager class has been eliminated and its functionality shifted to the Minesweeper class. At the end we noticed we had fewer functions, less variables and more modular code than we planned. 
+The associations between the classes have changed slightly, where the Main invokes the UI and the UI in-turn makes use of the logic of the game.
+
+3. Were there any surprises or things you did not expect along the way? Any 
+particular problem faced, things you had to tackle that you did not expect 
+beforehand?
+
+- The environment is not always the way we want it to be, we needed to make changes, install the needed requirements to setup the build on the local computers.
+- When developing as a team, there has to be communication, consensus and also similar platforms. We started building individually on Mac and Windows and we arrived at a point where the inbuilt methods had different methods, different invocations for the different platforms. 
+- The learning resources(video lectures) available to us had been in Java. Learning the concepts being explained  and replicating those concepts in Python had been a challenge initially.
+- Creating the build files would have taken a lot of time without Venkat.
+
+Total [100]: 99
+Code compiles [10]:
+
+Program produces reasonably desired results when run [10]: -1
+
+The buttons appearances have to change to show them without spaces in between.
+The right click should display a seal.
+
+All tests pass [20]:
+Code Coverage [10]:
+Test quality [10]:
+Design quality [20]:
+Code quality [10]:
+
+Answers to questions in assign1.txt [10]:
+
+Please write in short paragraphs, avoid bullets.

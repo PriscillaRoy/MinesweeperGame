@@ -1,0 +1,56 @@
+x canary test
+x user exposes an unexposed cell
+x user exposes an exposed cell
+x user exposes a cell column above range max
+x user exposes a cell column below range max
+x user exposes a cell row above range max
+x user exposes a cell row below range max
+x user seals an unexposed cell
+x user exposes a sealed cell
+x user seals a cell column above range max
+x user seals a cell column below range max
+x user seals a cell row above range max
+x user seals a cell row below range max
+x user unseal an sealed cell
+x user seals an exposed cell
+x expose calls exposeNeighbors
+x expose called on an already exposed cell does not call exposeNeighbors
+x expose called on a sealed cell does not call exposeNeighbors
+x exposeNeighbors calls expose on eight neighbors
+x exposeNeighbors on top left cell calls expose only on existing cells
+x exposeNeighbors on bottom right cell calls expose only on existing cells
+x isMineAt(3, 2) returns false
+x set mine at 3, 2 and isMineAt(3, 2) returns true
+x isMineAt(-1, 4) returns false
+x isMineAt(10, 5) returns false
+x isMineAt(5, -1) returns false
+x isMineAt(7, 10) returns false
+x exposing an adjacent cell does not call expose neighbors
+x verify adjacentMinesCountAt(4, 6) returns 0
+x set mine at 3, 4 and verify adjacentMinesCountAt(3, 4) returns 0
+x set mine at 3, 4 and verify adjacentMinesCountAt(3, 5) returns 1
+x set mine at 3, 4 and 2, 6 and verify adjacentMinesCountAt(3, 5) returns 2
+x set mine at 0, 1 and verify adjacentMinesCountAt(0, 0) returns 1
+x verify adjacentMinesCountAt(0, 9) returns 0
+x set mine at 9, 8 and verify adjacentMinesCountAt(9, 9) returns 1
+x verify adjacentMinesCountAt(9, 0) returns 0
+
+x getGameStatus() returns INPROGRESS
+x expose a mined cell and getGameStatus() returns LOST
+
+x test all the mines sealed when there is one mines sealed
+x test all the mines are sealed when there is two mines, one sealed and one not sealed 
+x test all the mines seald when there is 3 sealed mines
+x test all cells exposed when no cell has been exposed, return False
+x test all cells exposed when all cells are exposed, return True
+x test all cells exposed when one cell is sealed, return False
+x test all cells exposed when only one cell is exposed 
+x test all cells exposed when only one cell is unexposed
+
+x game in progress after all mines sealed but cells remain unexposed
+x game in progress after all mines are sealed but an empty cell is sealed
+x game in progress after all mines sealed but an adjacent cell is unexposed
+x game WON after all mines are sealed and all other cells exposed
+x call setMines(0) and verify there are a total of 10 mines, where 0 is a seed value for random number generator
+x call setMines(0) and setMines(1) and verify there is at least one mine
+ at a different between the two
